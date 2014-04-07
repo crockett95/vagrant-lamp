@@ -42,7 +42,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # The first round of provisioning. Without this the Puppet calls don't
   # work as desired.
-  config.vm.provision :shell, :path => "scripts/bootstrap.sh"
+  config.vm.provision :shell, :path => "vagrant/scripts/bootstrap.sh"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -78,9 +78,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # # }
   
   config.vm.provision "puppet" do |puppet|
-    puppet.manifests_path = "manifests"
+    puppet.manifests_path = ""
     puppet.manifest_file  = "site.pp"
-    puppet.module_path   = "modules"
+    puppet.module_path   = "vagrant/modules"
   end
 
   # Enable provisioning with chef solo, specifying a cookbooks path, roles

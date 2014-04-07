@@ -14,11 +14,13 @@ This should only be used _locally_ for development. The stack has not been optim
 ### Simple
 
 1. Clone the git repository, and initialize the submodules:  
-	 ```bash
-   git clone https://github.com/crockett95/vagrant-lamp.git  
-   cd vagrant-lamp  
-   git submodule update --init --recursive  
-	 ```
+   ```
+   # git clone https://github.com/crockett95/vagrant-lamp.git
+
+   # cd vagrant-lamp
+   
+   # git submodule update --init --recursive
+   ```
 2. Create the `app/` directory and add your stuff
 3. Start vagrant with `vagrant up`
   - MySQL root username and password are both `root`

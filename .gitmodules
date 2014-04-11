@@ -16,3 +16,6 @@
 [submodule "modules/php"]
 	path = modules/php
 	url = https://github.com/example42/puppet-php.git
+[submodule "modules/lamp"]
+	path = modules/lamp
+	url = https://github.com/crockett95/puppet-lamp.git

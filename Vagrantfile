@@ -42,7 +42,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # The first round of provisioning. Without this the Puppet calls don't
   # work as desired.
-  config.vm.provision :shell, :path => "scripts/bootstrap.sh"
+  # config.vm.provision :shell, :path => "scripts/bootstrap.sh"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
